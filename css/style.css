@@ -140,6 +140,7 @@ header{
 }
 .form_sign_lesson{
 	background-color: var(--light-blue);
+	border-radius: 20px;
 }
 .form_sign_lesson h2{
 	margin: 0;
