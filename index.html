@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">   
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+       <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <script>
+  $(function() {
+
+  $.get("https://api.skyeng.ru/v1/statistics/get", function(stats_data) {
+     lessonsPre = stats_data.lessons;
+     lessonsRes = (lessonsPre+'').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1\u202f');
+     $(".lessons").html(lessonsRes);
+
+     activeStudentsPre = stats_data.activeStudents;
+     activeStudentsRes = (activeStudentsPre+'').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1\u202f');
+     $(".active_students").html(activeStudentsRes);
+
+  })
+
+  $.get("https://api.business.skyeng.ru/api/v1/public/stats", function(companies_data) {
+     companiesPre = companies_data.active_companies_count;
+     companiesRes = (companiesPre+'').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1\u202f');
+     $("#active_companies_count").html(companiesRes);
+  })
+});
+</script>
+
+
+
+
+  </head>
+  <body class="page-body">
+
+  <div class="container">
+		<header id="header">
+    	<nav class="main_nav">
+        <div class="nav_logo">
+          <img src="img/logo_skyeng.png" width="132" height="37" alt="Логотип Скаенг">
+          <img src="img/logo_aeroflot.png" width="160" height="40" alt="Логотип Аэрофлот">
+        </div>
+        <div>
+          <button class="blue_button button_position" type="button">Начать учиться</button>
+        </div>
+    
+        </nav>
+    </header>
+       </div>
+     <hr>
+
+
+ <div class="container">
+    <main>
+      <section class="discount_offer">
+        <div class="discount_offer_title">
+          <h1>Онлайн-обучение английскoму языку  со&nbsp;скидкой 50%</h1>
+          <h3>Для сотрудников Аэрофлот Самолётинг их семей,  друзей, знакомых и не очень знакомых</h3>
+        </div>
+        <div class="discount_offer_img">
+          <img src="img/header_photo.jpg" width="470" height="268" alt="Видео-презентация">
+        </div>
+      </section>
+    
+      <section class="form_sign_lesson">
+
+        <h2>Запишитесь на бесплатный вводный урок</h2>
+        
+          <form class="form_request">
+
+          <label class="visually-hidden" for="name" alt="Поле для ввода имени"></label>
+            <input type="text" id="name" name="name" placeholder="Имя" required>
+          <label class="visually-hidden" for="tel" alt="Поле для ввода телефона"></label>
+            <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+          <label class="visually-hidden" for="mail" alt="Поле для ввода мэйла"></label>
+            <input type="mail" id="mail" name="mail" placeholder="Email" required>
+            <button type="sumbit" class="blue_button buttons">Записаться <span>Нажимая, вы принимаете <br>условия <u>соглашения</u></span></button>
+
+          </form>
+      
+      </section>
+      
+      <section class="advantages">
+       <div>
+        <span class="lessons">3577</span> 
+        <p>уроков проведено <br> за 6 лет работы</p>    
+        </div>
+        <div>
+        <span class="active_students">3577</span> 
+        <p>активных учеников<br> занимается в Skyeng</p>  
+        </div>   
+        <div>
+        <span id="active_companies_count">3577</span> 
+        <p>компаний-клиентов <br> доверили сотрудников</p>    
+        </div> 
+
+
+      </section>
+
+    </main>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  </body>

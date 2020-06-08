@@ -1,0 +1,228 @@
+:root{
+	--black-color: #101F33;
+	--white-color: #FFFFFF;
+	--accent-color: #3579EF;
+	--light-blue:#F2F8FF;
+	--gray_color2: #969B9E;
+}
+.page{
+	height: 100%;
+}
+
+*, 
+*::before, 
+*::after{
+	box-sizing: border-box;
+}
+ul li{
+	list-style: none;
+}
+.page-body{
+	min-height: 100%;
+}
+a{
+	text-decoration: none;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+hr{
+	width: 100%;
+	position: fixed;
+	background: #ffffff;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+}
+.container{
+	padding-left: 87px;
+	padding-right: 90px;
+}
+body{ 
+	font-family:'Open-Sans', Verdana, sans-serif;
+	margin: 0;
+	font-size: 24px;
+	line-height: 35px;
+	font-weight: 400;
+	color: var(--black-color);
+	background-color: var(--white-color);
+	width: 1360px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+header{
+   height:100px;
+ }
+
+.main_nav{
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 28px;
+   position: fixed;
+   z-index: 1000;
+}
+.nav-logo{
+	display: flex;
+}
+.nav_logo img:nth-child(2){
+	margin-left: 69px;
+	}
+.blue_button{
+	background-color: var(--accent-color);
+	width: 280px;
+	height: 50px;
+	border-radius: 25px;
+	border: none;
+	font-size: 24px;
+	color: var(--white-color);
+}
+.button_position{
+	position: absolute;
+	right: -810px;
+}
+.discount_offer{
+	width: 100%;
+	padding-bottom: 65px;
+	display: flex;
+}
+.discount_offer_title{
+	padding-top: 36px;
+	width: 60%;
+}
+.discount_offer_img{
+	width: 40%;
+	padding-top: 67px;
+	position: relative;
+}
+.discount_offer_img::before{
+	content: url(../img/polygon.png);
+	position: absolute;
+	width: 87px;
+	height: 87px;
+	z-index: 933;
+	left: 50%;
+	top:50%;
+}
+.discount_offer_img::after{
+	content: url(../img/all_skreen.png);
+	position: absolute;
+	width: 25px;
+	height:17px;
+	z-index: 933;
+	left: 90%;
+	top:80%;
+}
+.discount_offer_title h1{
+	line-height: 70px;
+	font-size: 60px;
+	font-weight: 800;
+	margin: 0;
+	padding:0;
+}
+
+.discount_offer_title h3{
+	font-size: 24px;
+	line-height: 35px;
+	font-weight: normal;
+}
+.form_sign_lesson{
+	background-color: var(--light-blue);
+}
+.form_sign_lesson h2{
+	margin: 0;
+	padding-top:44px;
+	padding-bottom: 46px;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 50px;
+	text-align: center;
+}
+.form_request{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 70px;
+	display: flex;
+	justify-content: space-between;
+}
+.form_request button{
+	margin-left: 20px;
+}
+.form_sign_lesson input{
+	border-radius: 25px;
+	border: 1px solid #ABC9F9;
+	padding-left:24px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 280px;
+	margin-left: 20px;
+}
+.form_sign_lesson input:nth-child(2){
+	margin-left: 0px;
+}
+.form_request p{
+	color: gray;
+	font-size: 13px;
+	display: block;
+}
+.buttons{
+	position: relative;
+}
+.buttons span{
+	display: block;
+	position: absolute;
+	padding-top: 20px;
+	padding-left: 75px;
+	color: var(--gray_color2);
+	font-size: 10px;
+}
+.advantages{
+	display: flex;
+	padding-bottom: 38px;
+	/*width: 100%;*/
+}
+.advantages div{
+	padding-top: 37px;
+	width: 100%;
+	text-align: center;
+	margin-left: 94px;
+}
+.advantages div:nth-child(1){
+	margin-left: 0;
+}
+.advantages p{
+	font-size: 18px;
+	line-height: 25px;
+	display: block;
+	color:var(--black-color);
+}
+.advantages span{
+	font-weight: 600;
+	font-size: 78px;
+	line-height: 90px;
+	color:var(--accent-color);
+}
+.advantages div:nth-child(2){
+	margin-left: 50px;
+}
+.advantages div:nth-child(3){
+	margin-left: 50px;
+}
+
+
+
+
+
+
+
+
