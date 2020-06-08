@@ -70,7 +70,7 @@ header{
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 28px;
+	padding-top: 31px;
 	position: fixed;
    z-index: 1000;
    width: 1180px;
@@ -93,7 +93,7 @@ header{
 }
 .discount_offer{
 	width: 100%;
-	padding-bottom: 65px;
+	padding-bottom: 30px;
 	display: flex;
 }
 .discount_offer_title{
@@ -111,8 +111,8 @@ header{
 	width: 87px;
 	height: 87px;
 	z-index: 933;
-	left: 50%;
-	top:50%;
+	left: 47%;
+	top:46%;
 }
 .discount_offer_img::after{
 	content: url(../img/all_skreen.png);
@@ -141,6 +141,7 @@ header{
 .form_sign_lesson{
 	background-color: var(--light-blue);
 	border-radius: 20px;
+	width: 1180px;
 }
 .form_sign_lesson h2{
 	margin: 0;
@@ -169,6 +170,7 @@ header{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	width: 280px;
+	height: 50px;
 	margin-left: 20px;
 }
 .form_sign_lesson input:nth-child(2){
